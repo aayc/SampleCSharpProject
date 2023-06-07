@@ -1,8 +1,12 @@
 name: Run InferSharp PR and Fix
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [pull_request]
+on:
+  pull_request:
+    types: [opened]
+  issue_comment:
+    types: [created]
 jobs:
-  deploy:
+  job_1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
