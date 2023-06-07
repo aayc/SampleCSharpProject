@@ -1,5 +1,4 @@
 name: Run InferSharp PR and Fix
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push, pull_request]
 jobs:
   job_1:
